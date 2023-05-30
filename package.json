@@ -1,0 +1,30 @@
+{
+  "name": "transport-tech-bn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " index.js",
+    "compile": " index.js",
+    "dev": "nodemon --exec npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igire-Rwanda/Transport-tech-bn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igire-Rwanda/Transport-tech-bn/issues"
+  },
+  "homepage": "https://github.com/Igire-Rwanda/Transport-tech-bn#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.2.2"
+  }
+}
