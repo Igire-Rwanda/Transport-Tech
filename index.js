@@ -10,6 +10,11 @@ import roleAssignment from "./routes/role-assignment.js";
 import user from "./routes/users.js";
 import createUser from "./controllers/usercontro.js";
 
+
+import status from "./routes/actStatusRoute.js"
+
+// import routes from "./routes/users.js";
+
 import createGps from "./routes/gpsRoutes.js";
 
 import mongoose from "mongoose";
@@ -34,11 +39,12 @@ app.use(express.json());
 app.use(cors());
 
 // app.use("/api/v2", user);
-app.get("/",Homepage)
+app.get("/", Homepage)
 app.use("/api/v2/vehicles", vehicle);
 app.use("/api/v2/booking", booking);
 app.use("/api/v2/routes", routes);
 app.use("/api/v2/role", roleAssignment);
+app.use("/api/v2/status", status);
 app.use("/api/v2/gps2", createGps);
 app.use("/api/v2/messages", messageRoutes);
 app.use("/api/v2/user", user);
@@ -53,12 +59,20 @@ app.use("/api/v2/register", registrationRouter);
 app.use("/api/v2/seats", seatRoutes); // seat marked as served
 
 app.use("/api/v2", createUser);
+
 app.use("/server", routes);
 app.use("/gps2", createGps);
 
 
+app.use("/server", routes);
 
-const port = 6000;
+const port = 3100;
+
+
+app.use("/gps2", createGps);
+
+
+
 
 
 
