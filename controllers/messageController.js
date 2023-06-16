@@ -2,6 +2,7 @@
 
 import messageModel from "../models/messageModol.js";
 
+
 import nodemailer from 'nodemailer';
 
 
@@ -45,8 +46,6 @@ async function createMessage(req, res) {
 
     await newMessage.save();
     
-
-
 
 
 
